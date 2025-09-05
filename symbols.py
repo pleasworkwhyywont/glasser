@@ -5,7 +5,8 @@ Basic_types = [
 ]
 
 key_symbols = [
-    "/"
+    "/",
+    " "
     "+"
     "-"
     "*"
@@ -19,6 +20,7 @@ key_symbols = [
     "\\"
     "|"
     "\n"
+    "\t"
 ]
 key_words = [
     "def",
@@ -35,7 +37,8 @@ key_words = [
     "import"
 ]
 
-class tokens(Enum):
+class Tokens(Enum):
     KEY_WORDS = auto()
     KEY_SYMBOLS = auto()
     KEY_TYPES = auto()
+    TEXT = auto()
