@@ -1,4 +1,4 @@
-import enum
+from enum import Enum, auto
 Basic_types = [
     "int8"
     "uint8"
@@ -35,7 +35,7 @@ key_words = [
     "import"
 ]
 
-class tokens(enum):
-    KEY_WORD = 1
-    KEY_SYMBOL = 2
-    KEY_TYPE = 3
+class tokens(Enum):
+    KEY_WORDS = auto()
+    KEY_SYMBOLS = auto()
+    KEY_TYPES = auto()
