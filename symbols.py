@@ -11,8 +11,6 @@ key_symbols = [
     "}",
     "(",
     ")",
-    "{",
-    "}",
     ">",
     "<",
     "=",
@@ -33,7 +31,7 @@ key_words = [
     "else",
     "swich",
     "case",
-    "add", #this is to add a method to a type
+    "add", #this is to add a general to a type
     "general",
     "import"
 ]

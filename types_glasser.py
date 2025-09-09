@@ -44,8 +44,24 @@ class comparations(Enum):
     GREATER_EQUAL = auto()
     LESSER_EQUAL = auto()
 
+
 class type_of_instructions(Enum):
     CONDITIONALS = auto()
     COMPARATIONS = auto()
     FUNC = auto()
+    TYPE = auto()
+    VAR = auto()
+    MACRO = auto()
+    GENERAL = auto()
     DECLARATION = auto()
+
+class oporations(Enum):
+    ADDITION = auto()
+    SUBTRACTION = auto()
+    MULTIPLICATION = auto()
+    DIVITION = auto()
+    NOT = auto()
+    AND = auto()
+    OR = auto()
+    SET = auto()
+    
