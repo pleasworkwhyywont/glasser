@@ -1,8 +1,4 @@
 from enum import Enum, auto
-Basic_types = [
-    "int8",
-    "uint8"
-]
 
 key_symbols = [
     "/",
@@ -10,6 +6,7 @@ key_symbols = [
     "+",
     "-",
     "*",
+    "=",
     "{",
     "}",
     "(",
@@ -23,7 +20,8 @@ key_symbols = [
     "|",
     "\n",
     "\t",
-    ";"
+    ";",
+    ","
 ]
 key_words = [
     "def",
@@ -43,5 +41,4 @@ key_words = [
 class Tokens(Enum):
     KEY_WORDS = auto()
     KEY_SYMBOLS = auto()
-    KEY_TYPES = auto()
     TEXT = auto()

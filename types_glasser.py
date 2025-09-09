@@ -1,10 +1,7 @@
+from enum import Enum, auto
 class err:
     def __init__(self,id):
         self.id = id
-
-class general:
-    def __init__(self,inputs):
-        self.inputs = inputs
 
 class Type:
     def __init__(self,name):
@@ -27,9 +24,28 @@ class var:
             self.lifetime -= 1
             return None
         return err(1)
+
 class func:
     def __init__(self,name):
         self.name = name
         self.code = None
     def set_code(self,code):
         self.code = code
+
+class conditionals(Enum):
+    IF = auto()
+    ELSE = auto()
+    WHILE = auto()
+
+class comparations(Enum):
+    GREATER = auto()
+    LESSER = auto()
+    EQUAL = auto()
+    GREATER_EQUAL = auto()
+    LESSER_EQUAL = auto()
+
+class type_of_instructions(Enum):
+    CONDITIONALS = auto()
+    COMPARATIONS = auto()
+    FUNC = auto()
+    DECLARATION = auto()
